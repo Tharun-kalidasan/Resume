@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tharun K — Portfolio & Resume</title>
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Portfolio of Tharun K — B.Tech CSE (Data Science) student at VIT Vellore. Projects in ML, Cloud, Software, and Web Development.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
@@ -19,7 +21,7 @@
       font-family: "Inter", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.8;
     }
     a { color: var(--accent); text-decoration: none; }
     .container { max-width: 1000px; margin: auto; padding: 20px; }
@@ -37,13 +39,21 @@
     .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
     .card {
       background: var(--card); padding: 20px; border-radius: var(--radius);
-      transition: transform 0.2s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
-    .card:hover { transform: translateY(-5px); }
+    .card:hover { 
+      transform: translateY(-5px); 
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); 
+    }
     .skills span {
       display: inline-block; background: var(--card); border-radius: 999px;
       padding: 6px 14px; margin: 6px; font-size: 14px; color: var(--muted);
-      border: 1px solid #2d3d56;
+      border: 1px solid #2d3d56; transition: 0.2s ease;
+    }
+    .skills span:hover {
+      background: var(--accent);
+      color: #0f172a;
+      border: none;
     }
     footer {
       text-align: center; padding: 30px; font-size: 14px; color: var(--muted);
@@ -90,11 +100,25 @@
     </section>
 
     <section>
-      <h2>Skills</h2>
+      <h2>Technical Skills</h2>
       <div class="skills">
         <span>Python</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
         <span>MySQL</span><span>AWS</span><span>Machine Learning</span><span>Compilers</span><span>Networks</span>
         <span>DSA</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <div class="skills">
+        <span>Communication</span>
+        <span>Leadership</span>
+        <span>Teamwork</span>
+        <span>Adaptability</span>
+        <span>Problem-Solving</span>
+        <span>Conflict Resolution</span>
+        <span>Critical Thinking</span>
+        <span>Work Under Pressure</span>
       </div>
     </section>
 
@@ -109,3 +133,4 @@
   </div>
 </body>
 </html>
+
