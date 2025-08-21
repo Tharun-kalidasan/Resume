@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tharun K — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; }
+    header { text-align: center; padding: 60px 20px; }
+    header h1 { font-size: 40px; font-weight: 700; margin-bottom: 10px; }
+    header p { font-size: 18px; color: var(--muted); }
+    .btn {
+      display: inline-block; margin-top: 20px; padding: 12px 20px;
+      background: var(--accent); color: #0f172a; font-weight: 600;
+      border-radius: var(--radius); transition: 0.2s ease;
+    }
+    .btn:hover { opacity: 0.9; }
+    section { margin: 60px 0; }
+    h2 { font-size: 28px; margin-bottom: 20px; border-bottom: 2px solid var(--accent); display: inline-block; }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .card {
+      background: var(--card); padding: 20px; border-radius: var(--radius);
+      transition: transform 0.2s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .skills span {
+      display: inline-block; background: var(--card); border-radius: 999px;
+      padding: 6px 14px; margin: 6px; font-size: 14px; color: var(--muted);
+      border: 1px solid #2d3d56;
+    }
+    footer {
+      text-align: center; padding: 30px; font-size: 14px; color: var(--muted);
+      border-top: 1px solid #2d3d56;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tharun K</h1>
+      <p>B.Tech CSE (Data Science) @ VIT Vellore • Software • ML • Cloud</p>
+      <a href="resume.pdf" class="btn" download>⬇ Download Resume</a>
+      <p style="margin-top: 12px;">
+        <a href="https://github.com/Tharun-kalidasan" target="_blank">GitHub</a> |
+        <a href="https://linkedin.com/in/tharun-kalidasan" target="_blank">LinkedIn</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Lexical & Syntax Analyzer</h3>
+          <p>Built a mini-compiler that tokenizes input and generates parse trees.</p>
+        </div>
+        <div class="card">
+          <h3>Network Protocols & Error Detection</h3>
+          <p>Implemented CRC, checksum, Hamming code, and Stop-and-Wait/Go-Back-N/Selective Repeat protocols.</p>
+        </div>
+        <div class="card">
+          <h3>DSA Library</h3>
+          <p>Implemented stacks, queues, trees, and sorting/searching algorithms in Java.</p>
+        </div>
+        <div class="card">
+          <h3>AWS EC2 Deployment</h3>
+          <p>Configured and deployed a web application with database integration on AWS.</p>
+        </div>
+        <div class="card">
+          <h3>Web Projects Portfolio</h3>
+          <p><a href="https://tharun-kalidasan.github.io/web-Programming-Projects/" target="_blank">View Live Demo</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Python</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>MySQL</span><span>AWS</span><span>Machine Learning</span><span>Compilers</span><span>Networks</span>
+        <span>DSA</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><b>VIT University, Vellore</b><br>B.Tech in Computer Science & Engineering (Data Science)<br>Expected Graduation: May 2027</p>
+    </section>
+
+    <footer>
+      © <script>document.write(new Date().getFullYear())</script> Tharun K · Hosted on GitHub Pages
+    </footer>
+  </div>
+</body>
+</html>
